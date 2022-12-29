@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 40px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+h1 {
+    text-align: center;
+    margin: 40px 0;
+    font-family: 'Sevillana', cursive;
+    font-size: 50px;
+}
+
+.btn-dark-mode {
+    text-align: center;
+    margin: 40px;
+    cursor: pointer;
+}
+
+.btn-dark-mode button {
+    cursor: pointer;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #434343;
+}
+
+.moon {
+    background-color: #434343;
+    color: white;
+}
+
+.dark-mode {
+    background-color: #2a2a2a;
+    color: white;
+}
+
+.gallery {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vmin;
+    padding: 0 14px;
+}
+
+.gallery::after {
+    content: '';
+    display: block;
+    flex-grow: 10;
+}
+
+.gallery li {
+    list-style-type: none;
+    height: 250px;
+    flex-grow: 1;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
